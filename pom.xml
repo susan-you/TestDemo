@@ -59,7 +59,7 @@
         <version>2.22.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>src/test/java/testngDemo/test.xml</suiteXmlFile>
+            <suiteXmlFile>src/test/java/test.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
