@@ -4,13 +4,11 @@
   <artifactId>testngDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  
-    
-   <dependencies> 
-   
 
 
- 
+
+<dependencies>
+
 <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
@@ -50,5 +48,24 @@
 
     </dependencies>
   
-  
+
+
+<build>
+<plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/java/testngDemo/test.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+</build>   
+
+
+
 </project>
