@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="logout" value="account2,pwd2"/>
+  <parameter name="onlineLoan" value="account3,pwd3"/>
+  <parameter name="browser" value="FireFox"/>
+  <parameter name="login" value="account1,pwd1"/>
+  <parameter name="o2o" value="13694246425"/>
+  <test name="TestChrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testngDemo.NewTest">
+        <methods>
+          <include name="f" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngDemo.NewTest -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+  <test name="TestFireFox(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="testngDemo.NewTest">
+        <methods>
+          <include name="f" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngDemo.NewTest -->
+    </classes>
+  </test> <!-- TestFireFox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

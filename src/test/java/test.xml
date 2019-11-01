@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<!-- 测试数据 -->
+<parameter name="login" value="account1,pwd1"></parameter> 
+<parameter name="logout" value="account2,pwd2"></parameter>  
+<parameter name="onlineLoan" value="account3,pwd3"></parameter> 
+<parameter name="o2o" value="13694246425"></parameter>  
+
+
+
+<!-- 浏览器 -->
+<test name="TestChrome">
+   <parameter name="browser"  value="Chrome"></parameter>
+   <classes>
+      <class name="testngDemo.NewTest"/>
+   </classes>
+   
+</test>
+
+<test name="TestFireFox">
+    <parameter name="browser"  value="FireFox"></parameter>
+       <classes>
+      <class name="testngDemo.NewTest"/>
+   </classes>
+</test>
+
+
+</suite> 
+
+  
+
